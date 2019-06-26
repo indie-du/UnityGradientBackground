@@ -22,3 +22,30 @@ Get a beautiful background gradient just by adding a simple script to your camer
 1. Import the `Packages/GradientBackground` to your project
 2. Add the `GradientBackground` component to your camera.
 
+## LWRP (Light Weight Render Pipeline support)
+
+![](readme/lwrp_example.gif)
+
+Open "Project Settings" and "Graphics" setting.
+Set "Scriptable Render Pipeline Settings" property to "BackgroundLWRPAsset", created for this script.
+
+![](readme/lwrp_status.png)
+
+Open LWRPBackgroundGradientExampleScene and press Play button.
+
+### Gradient Setting
+
+To customize gradient setting, at first open "BackgroundRendererFeature" scriptable object in project window.
+
+![](readme/lwrp_asset.png)
+
+And at inspector window, adjust properties.
+
+![](readme/lwrp_property.png)
+
+### Scripting
+
+If you want change gradient setting from script, change properties on "BackgroundRendererFeature" scriptable object from script.
+
+Please refer ChangeGradient.cs
+
